@@ -1,7 +1,8 @@
 # car-names
 
-[![npm Latest Stable Version](https://img.shields.io/npm/v/starwars-names.svg)](http://npm.im/car-names)
-[![MIT License](https://img.shields.io/npm/l/car-names.svg)](http://opensource.org/licenses/MIT)
+[![GitHub release](https://img.shields.io/github/release/palashmon/car-names.svg?colorB=brightgreen)](https://git.io/vyUIl)
+[![npm version](https://img.shields.io/npm/v/starwars-names.svg)](http://npm.im/car-names)
+[![MIT License](https://img.shields.io/npm/l/car-names.svg?colorB=green)](http://opensource.org/licenses/MIT)
 
 Used to get random Car Names or all
 
