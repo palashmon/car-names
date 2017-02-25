@@ -13,9 +13,11 @@ describe('start test car-names module', function() {
     it('should be an array of strings', function() {
       expect(carNames.all).to.satisfy(isArrayOfStrings);
 
-      function isArrayOfStrings(array) {
-		return array.every(item => typeof item === 'string');
-      }
+	  function isArrayOfStrings(array) {
+	    return array.every(function (item) {
+		  return typeof item === 'string';
+	    });
+	  }
     });
 	
     it('should contain one car named `Ferrari`', function() {
