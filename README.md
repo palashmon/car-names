@@ -4,7 +4,7 @@
 [![npm version](https://img.shields.io/npm/v/starwars-names.svg)](http://npm.im/car-names)
 [![MIT License](https://img.shields.io/npm/l/car-names.svg?colorB=0BD6D3)](http://opensource.org/licenses/MIT)
 
-Used to get random Car Names or all
+Used to get random car name or all car names :car: 
 
 ## Installation
 
