@@ -4,7 +4,9 @@
   "description": "Used to get random Car Names",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha src/index.test.js -w"
+    "start": "npm run test",
+    "watch:test": "npm t -- --watch",
+    "test": "mocha src/index.test.js"
   },
   "repository": {
     "type": "git",
