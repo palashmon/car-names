@@ -2,3 +2,7 @@ node_modules/
 *.log
 dist
 .nyc_output
+
+# Ignore test-related files
+/coverage.data
+/coverage/
