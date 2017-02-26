@@ -6,3 +6,7 @@ dist
 # Ignore test-related files
 /coverage.data
 /coverage/
+
+# Ignore build package
+*.tgz
+package/
