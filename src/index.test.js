@@ -1,33 +1,23 @@
+import {expect} from 'chai';
+import carNames from './index';
 
-// Get expect from the Chai API for BDD assertion styles
-const expect = require('chai').expect;
-
-// Get our car names module here
-const carNames = require('./index');
-
-// Tests
-describe('start test car-names module', function() {
-	
-  // Test car-names all property here
-  describe('all', function() {
-    it('should be an array of strings', function() {
+describe('start test car-names module', () => {	
+  describe('all', () => {
+    it('should be an array of strings', () => {
       expect(carNames.all).to.satisfy(isArrayOfStrings);
 
 	  function isArrayOfStrings(array) {
-	    return array.every(function (item) {
-		  return typeof item === 'string';
-	    });
+	    return array.every(item => typeof item === 'string');
 	  }
     });
 	
-    it('should contain one car named `Ferrari`', function() {
+    it('should contain one car named `Ferrari`', () => {
       expect(carNames.all).to.include('Ferrari');
     });
   });
 
-  // Test car-names random function here
-  describe('random', function() {
-    it('should return a random item from the carNames.all', function() {
+  describe('random', () => {
+    it('should return a random item from the carNames.all', () => {
       const randomCar = carNames.random();
       expect(carNames.all).to.include(randomCar);
     });
