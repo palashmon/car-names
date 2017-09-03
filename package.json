@@ -1,6 +1,6 @@
 {
   "name": "car-names",
-  "version": "1.5.1",
+  "version": "1.6.0",
   "description": "Used to get random Car Names",
   "main": "dist/index.js",
   "scripts": {
@@ -55,7 +55,6 @@
     "README.md"
   ],
   "engines": {
-    "node": "6.x",
     "node": ">= 4.0.0"
   },
   "config": {
