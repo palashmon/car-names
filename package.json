@@ -1,6 +1,6 @@
 {
   "name": "car-names",
-  "version": "1.8.0",
+  "version": "1.8.1",
   "description": "Used to get random Car Names",
   "main": "dist/index.js",
   "scripts": {
