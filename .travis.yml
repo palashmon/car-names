@@ -12,9 +12,14 @@ branches:
     - /^greenkeeper/.*$/
 notifications:
   email: false
+before_install:
+  - "npm i -g npm@latest"
 install:
   - npm install
+before_script:
+  - npm prune
 script:
   - npm run cover
   - npm run build
+after_success:
   - npm run semantic-release
