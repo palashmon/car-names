@@ -21,3 +21,4 @@ before_script:
 script:
   - npm run cover
   - npm run build
+  - npm run semantic-release
