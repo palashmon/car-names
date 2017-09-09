@@ -12,11 +12,8 @@ branches:
     - /^greenkeeper/.*$/
 notifications:
   email: false
-before_install: if [[ `npm -v` != 4* ]]; then npm i -g npm@4; fi
 install:
   - npm install
-before_script:
-  - npm prune
 script:
   - npm run cover
   - npm run build
