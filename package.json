@@ -63,6 +63,11 @@
         "semantic-release": "^12.2.2",
         "webpack": "~3.11.0"
     },
+    "greenkeeper": {
+        "ignore": [
+            "webpack"
+        ]
+     },
     "files": ["dist", "README.md"],
     "config": {
         "commitizen": {
