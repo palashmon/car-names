@@ -1,8 +1,5 @@
-dist: trusty
-sudo: false
 language: node_js
-node_js:
-  - 8
+node_js: 8
 cache:
   directories:
     - node_modules
@@ -21,5 +18,8 @@ before_script:
 script:
   - npm run cover
   - npm run build
-after_success:
-  - npm run semantic-release
+deploy:
+  provider: script
+  skip_cleanup: true
+  script:
+    - npx semantic-release
