@@ -1,92 +1,88 @@
 {
-    "name": "car-names",
-    "version": "0.0.0-development",
-    "description": "Used to get random Car Names",
-    "main": "dist/index.js",
-    "scripts": {
-        "start": "npm run test",
-        "check-coverage": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
-        "watch:test": "npm t -- --watch",
-        "test": "mocha src/index.test.js --require @babel/register",
-        "cover": "nyc --reporter=lcov npm t",
-        "prebuild": "rimraf dist",
-        "build": "npm-run-all --parallel build:*",
-        "build:main": "babel --copy-files --out-dir dist --ignore *.test.js src",
-        "build:umd": "webpack --output-filename index.umd.js",
-        "build:umd.min": "webpack --output-filename index.umd.min.js -p",
-        "validate": "npm run cover && npm run check-coverage",
-        "precommit": "npm run validate",
-        "commit": "git-cz",
-        "semantic-release": "semantic-release pre && npm publish && semantic-release post"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/palashmon/car-names.git"
-    },
-    "keywords": [
-        "car",
-        "names",
-        "random",
-        "all"
-    ],
-    "author": "Palash Mondal <palashm@live.in>",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/palashmon/car-names/issues"
-    },
-    "homepage": "https://github.com/palashmon/car-names#readme",
-    "dependencies": {
-        "unique-random-array": "~1.0.0"
-    },
-    "devDependencies": {
-        "@babel/cli": "^7.0.0-beta.54",
-        "@babel/core": "^7.0.0-beta.54",
-        "@babel/plugin-external-helpers": "^7.0.0-beta.54",
-        "@babel/plugin-transform-async-to-generator": "^7.0.0-beta.54",
-        "@babel/plugin-transform-destructuring": "^7.0.0-beta.54",
-        "@babel/plugin-transform-flow-strip-types": "^7.0.0-beta.54",
-        "@babel/plugin-transform-modules-commonjs": "^7.0.0-beta.54",
-        "@babel/plugin-transform-parameters": "^7.0.0-beta.54",
-        "@babel/plugin-transform-runtime": "^7.0.0-beta.54",
-        "@babel/plugin-transform-strict-mode": "^7.0.0-beta.54",
-        "@babel/preset-env": "^7.0.0-beta.54",
-        "@babel/register": "^7.0.0-beta.54",
-        "babel-eslint": "^8.1.0",
-        "babel-loader": "^8.0.0-beta.0",
-        "babel-plugin-syntax-trailing-function-commas": "^6.13.0",
-        "babel-plugin-transform-inline-imports-commonjs": "^1.2.0",
-        "chai": "^4.1.2",
-        "commitizen": "^2.9.6",
-        "cz-conventional-changelog": "^2.0.0",
-        "husky": "^0.14.3",
-        "json-loader": "^0.5.7",
-        "mocha": "^5.2.0",
-        "npm-run-all": "^4.1.1",
-        "nyc": "^12.0.1",
-        "rimraf": "^2.6.1",
-        "semantic-release": "^15.8.0",
-        "webpack": "^3.11.0"
-    },
-    "greenkeeper": {
-        "ignore": [
-            "webpack"
-        ]
-    },
-    "files": [
-        "dist",
-        "README.md"
-    ],
-    "config": {
-        "commitizen": {
-            "path": "node_modules/cz-conventional-changelog"
-        }
-    },
-    "engines": {
-        "node": ">= 4.0.0"
-    },
-    "babel": {
-        "presets": [
-            "@babel/preset-env"
-        ]
+  "name": "car-names",
+  "version": "0.0.0-development",
+  "description": "Used to get random Car Names",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "npm run test",
+    "check-coverage": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
+    "watch:test": "npm t -- --watch",
+    "test": "mocha src/index.test.js --require @babel/register",
+    "cover": "nyc --reporter=lcov npm t",
+    "prebuild": "rimraf dist",
+    "build": "npm-run-all --parallel build:*",
+    "build:main": "babel --copy-files --out-dir dist --ignore *.test.js src",
+    "build:umd": "webpack --output-filename index.umd.js",
+    "build:umd.min": "webpack --output-filename index.umd.min.js -p",
+    "validate": "npm run cover && npm run check-coverage",
+    "precommit": "npm run validate",
+    "commit": "git-cz",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/palashmon/car-names.git"
+  },
+  "keywords": [
+    "car",
+    "names",
+    "random",
+    "all"
+  ],
+  "author": "Palash Mondal <palashm@live.in>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/palashmon/car-names/issues"
+  },
+  "homepage": "https://github.com/palashmon/car-names#readme",
+  "dependencies": {
+    "unique-random-array": "~1.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.54",
+    "@babel/core": "^7.0.0-beta.54",
+    "@babel/plugin-external-helpers": "^7.0.0-beta.54",
+    "@babel/plugin-transform-async-to-generator": "^7.0.0-beta.54",
+    "@babel/plugin-transform-destructuring": "^7.0.0-beta.54",
+    "@babel/plugin-transform-flow-strip-types": "^7.0.0-beta.54",
+    "@babel/plugin-transform-modules-commonjs": "^7.0.0-beta.54",
+    "@babel/plugin-transform-parameters": "^7.0.0-beta.54",
+    "@babel/plugin-transform-runtime": "^7.0.0-beta.54",
+    "@babel/plugin-transform-strict-mode": "^7.0.0-beta.54",
+    "@babel/preset-env": "^7.0.0-beta.54",
+    "@babel/register": "^7.0.0-beta.54",
+    "babel-eslint": "^8.1.0",
+    "babel-loader": "^8.0.0-beta.0",
+    "babel-plugin-syntax-trailing-function-commas": "^6.13.0",
+    "babel-plugin-transform-inline-imports-commonjs": "^1.2.0",
+    "chai": "^4.1.2",
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.0.0",
+    "husky": "^0.14.3",
+    "json-loader": "^0.5.7",
+    "mocha": "^5.2.0",
+    "npm-run-all": "^4.1.1",
+    "nyc": "^12.0.1",
+    "rimraf": "^2.6.1",
+    "semantic-release": "^15.8.0",
+    "webpack": "~4.16.3",
+    "webpack-cli": "~3.1.0"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
     }
+  },
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  }
 }
