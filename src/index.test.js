@@ -1,7 +1,7 @@
 import {expect} from 'chai';
-import carNames from './index';
+import carNames from "./index.js";
 
-describe('start test car-names module', () => {	
+describe('start test car-names module', () => {
   describe('all', () => {
     it('should be an array of strings', () => {
       expect(carNames.all).to.satisfy(isArrayOfStrings);
@@ -10,7 +10,7 @@ describe('start test car-names module', () => {
 	    return array.every(item => typeof item === 'string');
 	  }
     });
-	
+
     it('should contain one car named `Ferrari`', () => {
       expect(carNames.all).to.include('Ferrari');
     });
