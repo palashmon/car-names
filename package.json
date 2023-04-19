@@ -85,5 +85,6 @@
     "presets": [
       "@babel/preset-env"
     ]
-  }
+  },
+  "type": "module"
 }
