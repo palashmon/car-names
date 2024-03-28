@@ -3,6 +3,7 @@
   "version": "1.11.1",
   "description": "Used to get random Car Names",
   "main": "dist/index.js",
+  "type": "module",
   "scripts": {
     "start": "npm run test",
     "check-coverage": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
@@ -66,7 +67,7 @@
     "rimraf": "^5.0.0",
     "semantic-release": "^23.0.0",
     "webpack": "5.91.0",
-    "webpack-cli": "^5.0.1" 
+    "webpack-cli": "^5.0.1"
   },
   "files": [
     "dist",
@@ -78,7 +79,7 @@
     }
   },
   "engines": {
-    "node": ">= 4.0.0"
+    "node": ">= 18.0.0"
   },
   "babel": {
     "presets": [

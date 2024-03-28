@@ -1,7 +1,7 @@
-import uniqueRandomArray from 'unique-random-array';
-import carNames from './car-names.json';
+import uniqueRandomArray from "unique-random-array";
+import carNames from "./car-names.json" assert { type: "json" };
 
-module.exports = {
-	all: carNames,
-	random: uniqueRandomArray(carNames)
-}
+export default {
+  all: carNames,
+  random: uniqueRandomArray(carNames),
+};
