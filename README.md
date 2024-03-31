@@ -36,5 +36,3 @@ var randomName = carNames.random();
 ```
 npm test
 ```
-
-This is added here for testing auto labeler feature.

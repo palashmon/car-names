@@ -5,7 +5,7 @@
 # file with configuration.  For more information, see:
 # https://github.com/actions/labeler
 
-name: Labeler
+name: "Pull Request Labeler"
 on: [pull_request_target]
 
 jobs:
@@ -17,6 +17,10 @@ jobs:
       pull-requests: write
 
     steps:
-    - uses: actions/labeler@v4
+    - uses: actions/checkout@v4 # Uploads repository content to the runner
+      with:
+        repository: "palashmon/car-names"
+
+    - uses: actions/labeler@v5
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
