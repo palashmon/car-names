@@ -1,5 +1,5 @@
 # car-names
-> Used to get random car names or all car names :car: 
+> Used to get random car names or all car names :car:
 
 [![CI](https://github.com/palashmon/car-names/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/palashmon/car-names)
 [![npm version](https://img.shields.io/npm/v/car-names.svg)](http://npm.im/car-names)
