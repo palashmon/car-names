@@ -40,7 +40,7 @@
     "unique-random-array": "~3.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "7.27.1",
+    "@babel/cli": "7.27.2",
     "@babel/core": "7.27.1",
     "@babel/plugin-external-helpers": "7.27.1",
     "@babel/plugin-transform-async-to-generator": "7.27.1",
@@ -50,7 +50,7 @@
     "@babel/plugin-transform-parameters": "7.27.1",
     "@babel/plugin-transform-runtime": "7.27.1",
     "@babel/plugin-transform-strict-mode": "7.27.1",
-    "@babel/preset-env": "7.27.1",
+    "@babel/preset-env": "7.27.2",
     "@babel/register": "7.27.1",
     "babel-eslint": "10.1.0",
     "babel-loader": "9.2.1",
@@ -66,7 +66,7 @@
     "nyc": "15.1.0",
     "rimraf": "5.0.10",
     "semantic-release": "23.1.1",
-    "webpack": "5.99.7",
+    "webpack": "5.99.8",
     "webpack-cli": "5.1.4"
   },
   "files": [
