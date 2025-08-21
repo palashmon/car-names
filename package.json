@@ -56,7 +56,7 @@
     "babel-loader": "9.2.1",
     "babel-plugin-syntax-trailing-function-commas": "6.22.0",
     "babel-plugin-transform-inline-imports-commonjs": "1.2.0",
-    "chai": "5.2.0",
+    "chai": "5.3.1",
     "commitizen": "4.3.1",
     "cz-conventional-changelog": "3.3.0",
     "husky": "8.0.3",
