@@ -6,19 +6,9 @@
   "type": "module",
   "scripts": {
     "start": "npm run test",
-    "check-coverage": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
-    "watch:test": "npm t -- --watch",
-    "test": "mocha src/index.test.js --require @babel/register",
-    "cover": "nyc --reporter=lcov npm t",
-    "prebuild": "rimraf dist",
-    "build": "npm-run-all --parallel build:*",
-    "build:main": "babel --copy-files --out-dir dist --ignore *.test.js src",
-    "build:umd": "webpack --output-filename index.umd.js",
-    "build:umd.min": "webpack --output-filename index.umd.min.js -p",
-    "validate": "npm run cover && npm run check-coverage",
-    "precommit": "npm run validate",
-    "commit": "git-cz",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "test": "vitest run"
   },
   "repository": {
     "type": "git",
@@ -40,50 +30,14 @@
     "unique-random-array": "~3.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "7.28.0",
-    "@babel/core": "7.29.0",
-    "@babel/plugin-external-helpers": "7.27.1",
-    "@babel/plugin-transform-async-to-generator": "7.28.6",
-    "@babel/plugin-transform-destructuring": "7.28.0",
-    "@babel/plugin-transform-flow-strip-types": "7.27.1",
-    "@babel/plugin-transform-modules-commonjs": "7.28.6",
-    "@babel/plugin-transform-parameters": "7.27.7",
-    "@babel/plugin-transform-runtime": "7.29.0",
-    "@babel/plugin-transform-strict-mode": "7.27.1",
-    "@babel/preset-env": "7.29.0",
-    "@babel/register": "7.28.3",
-    "babel-eslint": "10.1.0",
-    "babel-loader": "9.2.1",
-    "babel-plugin-syntax-trailing-function-commas": "6.22.0",
-    "babel-plugin-transform-inline-imports-commonjs": "1.2.0",
-    "chai": "5.3.1",
-    "commitizen": "4.3.1",
-    "cz-conventional-changelog": "3.3.0",
-    "husky": "8.0.3",
-    "json-loader": "0.5.7",
-    "mocha": "10.8.2",
-    "npm-run-all": "4.1.5",
-    "nyc": "15.1.0",
-    "rimraf": "5.0.10",
-    "semantic-release": "23.1.1",
-    "webpack": "5.105.0",
-    "webpack-cli": "5.1.4"
+    "vite": "^6.3.5",
+    "vitest": "^3.2.4"
   },
   "files": [
     "dist",
     "README.md"
   ],
-  "config": {
-    "commitizen": {
-      "path": "node_modules/cz-conventional-changelog"
-    }
-  },
   "engines": {
-    "node": ">=20.19.3"
-  },
-  "babel": {
-    "presets": [
-      "@babel/preset-env"
-    ]
+    "node": ">=22"
   }
 }
