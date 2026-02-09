@@ -44,7 +44,7 @@
     "unique-random-array": "~3.0.0"
   },
   "devDependencies": {
-    "vite": "^6.3.5",
+    "vite": "^6.4.1",
     "vitest": "^3.2.4"
   },
   "files": [
